@@ -1,0 +1,346 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+
+
+*{
+  margin: 0px;
+  padding :0px;
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body{
+    font-size: 25px;
+    overflow-x: hidden;
+    color: black;
+}
+
+
+header{
+    background-image :linear-gradient(rgba(0,0,0,0.5),rgba(212, 196, 196, 0.5)), url('../images/ProjectPic5.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(5, 7, 138);
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix :after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style:none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight:100;
+}
+
+.main-content-header{
+    width: 1180px;
+    position :absolute;
+    top:45%;
+    text-align: center;
+}
+
+
+#int .int {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(212, 196, 196, 0.5)), url('../images/ProjectPic6.jpg');
+	flex-direction: row;
+	text-align: center;
+	width:auto;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#int .int-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#int .int-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: left center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#int .int-item {
+	flex-basis:100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	padding: 100px;
+	border-radius: 1000px;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#int .int-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgb(235, 234, 243),rgb(114, 113, 117));
+	opacity: .9;
+	z-index: -1;
+}
+#int .int-item .icon {
+	height: 1000px;
+	width: 1000px;
+	margin-bottom: 20px;
+}
+#int .int-item h2 {
+	font-size: 4rem;
+	color: white;
+	margin-bottom: 10px;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+#int .int-item h3 {
+	font-size: 4rem;
+	color: white;
+	margin-bottom: 10px;
+	text-align:center;
+	text-transform: uppercase;
+}
+#int .int-item p {
+	color: white;
+	text-align: left;
+}
+
+/* End Interests Section */
+
+/* Projects section */
+#projects .projects {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(212, 196, 196, 0.5)), url('../images/PIC1.jpg');
+    background-size: cover;
+	width:auto;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+    text-align:center;
+    color:rgb(115, 207, 243)
+}
+#projects .all-projects {
+	align-items: center;
+	justify-content: center;
+}
+#projects .project-item {
+    align-items: left;
+    background-size: cover;
+	width: 60%;
+	margin: 20px ;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+    flex-basis: auto;
+    background-size: cover;
+	height: auto;
+	justify-content: left;
+	background-image: linear-gradient(rgb(235, 234, 243),rgb(114, 113, 117)),url('../images/PROJECTPIC2.jpg');
+	color: white;
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: .7;
+}
+#projects .project-img img {
+	transition: .3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+/* End Projects section */
+
+/* About Section */
+#about .about {
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5),rgba(212, 196, 196, 0.5)), url('../images/ProjectPic7.jpg'); 
+    background-size: cover;
+	text-align: center;
+	width:auto;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 250px;
+	height: 360px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+
+/* End About Section */
+
+/* contact Section */
+#contact .contact {
+
+	text-align: center;
+	width:auto;
+	margin: 0 auto;
+}
+#contact .contact-items {
+    text-align: center;
+	width: auto;
+}
+#contact .contact-item {
+	width: 95%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+
+.mobile-icon{
+	display:none;
+}
+
+
+@media only screen and (max-width:1180px)
+{
+	.main-content-header{
+		width:100%;
+		padding:0 2%;
+	}
+}
+
+@media only screen and (max-width:998px)
+{
+	h1{
+		font-size:200%;
+	}
+}
+
+@media only screen and (max-width:768px)
+{
+	h1{
+		font-size:180%;
+	}
+
+	.main-nav li{
+		display:none;
+	}
+
+	.mobile-icon{
+		display: inline-block;
+		color:#fff;
+		float: right;
+		margin-top:30px;
+		margin-right: 20px;
+	}
+
+	.main-nav{
+		float:left;
+		display:block;
+		margin-top: 10px;
+	}
+}
